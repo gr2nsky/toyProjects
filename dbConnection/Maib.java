@@ -1,9 +1,17 @@
+package dbConnection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-public class DBMS {	
-	Connection DBA() {
+public class Maib {
+
+	public static void main(String[] args) {
+		Connection conn = DBA();
+		
+		
+	}
+	
+	static Connection DBA() {
 		Connection conn = null;
 		final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
 		final String DB_URL = "jdbc:mysql://[IP]/[Schema]?characterEncoding=UTF-8&serverTimezone=UTC";
@@ -26,4 +34,3 @@ public class DBMS {
 		return conn;
 	}
 }
-		
