@@ -1,14 +1,14 @@
 //
-//  runTestTests.swift
-//  runTestTests
+//  FirstSroryboardTests.swift
+//  FirstSroryboardTests
 //
-//  Created by 윤재필 on 2021/04/13.
+//  Created by 윤재필 on 2021/04/14.
 //
 
 import XCTest
-@testable import runTest
+@testable import FirstSroryboard
 
-class runTestTests: XCTestCase {
+class FirstSroryboardTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
