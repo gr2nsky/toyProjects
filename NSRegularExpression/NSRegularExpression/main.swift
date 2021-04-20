@@ -54,6 +54,7 @@ func emailRegularExpression(input: String) -> Bool {
     return false
 }
 //위의 정규식 검사를 하나로 통합
+//type 1: id, 2: pw, 3: email
 func sginUpRegularExpression(_ input: String, _ type: Int) -> Bool{
     var pattern: String = ""
     switch type {
@@ -65,7 +66,7 @@ func sginUpRegularExpression(_ input: String, _ type: Int) -> Bool{
     case 3:
         pattern = "^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,20}$"
     default:
-        print("error")
+        print("[sginUpRegularExpression function] type error")
         return false
     }
     
